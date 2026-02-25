@@ -1,4 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --crimson: #80182e;
+  --crimson-light: #a02040;
+  --crimson-pale: #fdf0f2;
+  --dark-green: #1c2826;
+  --dark-green-light: #253330;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cairo', 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+}
+
+[dir="rtl"] {
+  font-family: 'Cairo', sans-serif;
+}
+
+[dir="ltr"] {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f8f8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #80182e;
+  border-radius: 3px;
+}
+
+/* Brand gradient text */
+.brand-text {
+  background: linear-gradient(135deg, #80182e, #c0304f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* brand-gradient for backgrounds */
+.brand-gradient {
+  background: linear-gradient(135deg, #80182e, #a02040);
+}

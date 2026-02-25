@@ -1,10 +1,123 @@
-
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yaman Al-Sayed</title>
+
+    <!-- ═══════════════════════════════════════
+         PRIMARY SEO
+    ═══════════════════════════════════════ -->
+    <title>يمان السيد | صحفي ميداني ومنشئ محتوى</title>
+    <meta
+      name="description"
+      content="يمان السيد — صحفي ميداني ومنشئ محتوى من سوريا. تغطيات إخبارية حصرية، تقارير ميدانية، ومحتوى رقمي يصل لأكثر من 688 ألف متابع."
+    />
+    <meta
+      name="keywords"
+      content="يمان السيد, صحفي سوري, صحفي ميداني, منشئ محتوى, تغطية إخبارية, سوريا, دمشق, Yaman Al-Sayed, Syrian journalist"
+    />
+    <meta name="author" content="يمان السيد" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://yamanalssayed.com/" />
+
+    <!-- ═══════════════════════════════════════
+         OPEN GRAPH (Facebook / WhatsApp)
+    ═══════════════════════════════════════ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yamanalssayed.com/" />
+    <meta property="og:title" content="يمان السيد | صحفي ميداني ومنشئ محتوى" />
+    <meta
+      property="og:description"
+      content="صحفي ميداني ومنشئ محتوى من سوريا — تغطيات حصرية وتقارير ميدانية."
+    />
+    <meta
+      property="og:image"
+      content="https://yamanalssayed.com/og-cover.jpg"
+    />
+    <meta property="og:locale" content="ar_AR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:site_name" content="يمان السيد" />
+
+    <!-- ═══════════════════════════════════════
+         TWITTER CARD
+    ═══════════════════════════════════════ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="يمان السيد | صحفي ميداني" />
+    <meta
+      name="twitter:description"
+      content="صحفي ميداني ومنشئ محتوى — تغطيات حصرية وتقارير ميدانية."
+    />
+    <meta
+      name="twitter:image"
+      content="https://yamanalssayed.com/og-cover.jpg"
+    />
+
+    <!-- ═══════════════════════════════════════
+         JSON-LD STRUCTURED DATA (Google)
+    ═══════════════════════════════════════ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "يمان السيد",
+        "alternateName": "Yaman Al-Sayed",
+        "url": "https://yamanalssayed.com",
+        "image": "https://yamanalssayed.com/logo.png",
+        "jobTitle": "صحفي ميداني ومنشئ محتوى",
+        "description": "صحفي ميداني ومنشئ محتوى رقمي من سوريا، يمتلك قاعدة متابعين تتجاوز 688 ألف على منصات التواصل الاجتماعي.",
+        "nationality": "Syrian",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "دمشق",
+          "addressCountry": "SY"
+        },
+        "sameAs": ["https://instagram.com/yamanalssayed"],
+        "knowsAbout": [
+          "Journalism",
+          "Field Reporting",
+          "Content Creation",
+          "Social Media",
+          "Syria"
+        ]
+      }
+    </script>
+
+    <!-- ═══════════════════════════════════════
+         PERFORMANCE — Preconnect & Fonts
+    ═══════════════════════════════════════ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Tajawal font — NON-BLOCKING (async load, no render delay) -->
+    <!-- Step 1: preload the CSS descriptor -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap"
+    />
+    <!-- Step 2: load stylesheet without blocking render -->
+    <link
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap"
+    />
+    <!-- Step 3: fallback for no-JS -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap"
+      />
+    </noscript>
+
+    <!-- Critical inline fallback — renders text instantly before font loads -->
+    <style>
+      body { font-family: 'Tajawal', 'Arial', sans-serif; }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="/logo.webp" />
+    <link rel="apple-touch-icon" href="/logo.webp" />
   </head>
   <body class="bg-black">
     <div id="root"></div>
